@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NutriSnap — Nutricionista Inteligente por Foto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <img src="assets/logo.svg" alt="NutriSnap" class="logo">
+      <h1>NutriSnap</h1>
+      <p class="tag">Tire uma foto. Receba análise nutricional instantânea.</p>
+      <a class="cta" id="tryButton">Testar agora — enviar foto</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="features">
+      <h2>Como funciona</h2>
+      <ol>
+        <li>Tire uma foto do seu prato.</li>
+        <li>A IA identifica os alimentos e calcula nutrientes.</li>
+        <li>Receba recomendações rápidas para melhorar a refeição.</li>
+      </ol>
+      <div class="grid">
+        <div class="card">
+          <h3>Análise por foto</h3>
+          <p>Reconhecimento automático de alimentos e estimativa de nutrientes.</p>
+        </div>
+        <div class="card">
+          <h3>Plano diário</h3>
+          <p>Receitas e sugestões baseadas nas suas fotos.</p>
+        </div>
+        <div class="card">
+          <h3>Histórico</h3>
+          <p>Acompanhe suas refeições e evolução nutricional.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="simulator" id="simulator">
+      <h2>Simulador — envie uma foto (simulado)</h2>
+      <p>O protótipo usa simulação local: faça upload de uma imagem e veja um resultado de exemplo.</p>
+      <input type="file" id="photoInput" accept="image/*">
+      <div id="previewWrapper" class="previewWrapper" style="display:none;">
+        <img id="preview" src="" alt="preview" />
+        <div class="result" id="result">
+          <h3>Resultado da análise</h3>
+          <p><strong>Calorias:</strong> <span id="cal">--</span> kcal</p>
+          <p><strong>Proteínas:</strong> <span id="prot">--</span> g</p>
+          <p><strong>Carboidratos:</strong> <span id="carb">--</span> g</p>
+          <p><strong>Gorduras:</strong> <span id="fat">--</span> g</p>
+          <p><strong>Avaliação:</strong> <span id="score">--</span>/100</p>
+          <button id="saveBtn">Salvar refeição (simulado)</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing">
+      <h2>Preços</h2>
+      <div class="pricing-cards">
+        <div class="price-card">
+          <h3>Grátis</h3>
+          <p>2 uploads/dia • Histórico básico</p>
+        </div>
+        <div class="price-card premium">
+          <h3>Premium — R$19,90/mês</h3>
+          <p>Uploads ilimitados • Plano alimentar • Acesso completo</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>NutriSnap — Protótipo criado por ChatGPT para Vitor. © 2025</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
